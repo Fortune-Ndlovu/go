@@ -7,6 +7,7 @@ func main () {
 	fmt.Println("Name:", name)
 
 	changeVariables()
+	allInOne()
 }
 
 // Basic theory
