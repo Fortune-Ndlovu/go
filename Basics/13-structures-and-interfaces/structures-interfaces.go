@@ -1,12 +1,20 @@
 package main
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main () {
-	rect1 := Rectangle{10, 5}
-	fmt.Println(rect1.height)
-	fmt.Println(rect1.width)
+	rect := Rectangle{50,60}
+	circ := Circle{7}
+	fmt.Println("Area of rectangle is ", getArea(rect))
+	fmt.Println("Radius of cicle is ", getArea(circ))
+// 	Area of rectangle is  3000
+// Radius of cicle is  153.93804002589985
+}
 
-	fmt.Println(rect1.area())
+type Shape interface {
+	area() float64
 }
 
 type Rectangle struct {
@@ -14,6 +22,19 @@ type Rectangle struct {
 	width float64
 }
 
-func (rec *Rectangle) area() float64 {
-	return rec.height * rec.width
+type Circle struct {
+	radius float64
 }
+
+func ( r1 Rectangle) area() float64 {
+	return r1.height * r1.width
+}
+
+func (c1 Circle) area() float64 {
+	return math.Pi * math.Pow(c1.radius,2)
+}
+
+func getArea(shape Shape) float64 {
+	return shape.area()
+}
+
