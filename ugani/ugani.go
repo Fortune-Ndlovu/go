@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(reverse.String("Ugani Friend"))
+	fmt.Println(reverse.String("Ugani Friend"), reverse.Int(24601))
 }
