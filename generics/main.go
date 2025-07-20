@@ -38,4 +38,11 @@ func SumFloats(m map[string]float64) float64 {
 	return s
 }
 
-
+// SumIntsOrFloats sums the values of map m. It supports both int64 and float64 as types for map values
+func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
+	var s V
+	for _, v := range m {
+		s += v
+	}
+	return s
+}
