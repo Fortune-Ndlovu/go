@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+type Number interface {
+	int64 | float64
+}
+
 func main() {
 	// Initialize a map for the integer values
 	ints := map[string]int64 {
