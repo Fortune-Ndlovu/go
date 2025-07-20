@@ -60,3 +60,12 @@ func SumIntsOrFloats[K comparable, V int64 | float64](m map[K]V) V {
 	}
 	return s
 }
+
+// SumNumbers sums the values of map m. It supports both integer and floats as a  map values.
+func SumNumbers[K comparable, V Number](m map[K]V) V {
+	var s V
+	for _, v := range m {
+		s += v
+	}
+	return s
+}
