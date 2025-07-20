@@ -6,5 +6,6 @@ use (
 	./fuzz
 	./generics
 	./hello
+	./vuln-tutorial
 	./web-service-gin
 )
