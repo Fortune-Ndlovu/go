@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// Initialize a map for the integer values
@@ -18,6 +20,10 @@ func main() {
 	fmt.Printf("Non-Generic Sums: %v and %v\n",
 		SumInts(ints),
 		SumFloats(floats))
+
+	fmt.Printf("Generics Sums: %v and %v\n",
+		SumIntsOrFloats[string, int64](ints),
+		SumIntsOrFloats[string, float64](floats))
 }
 
 // SumInts adds together the values of m.
