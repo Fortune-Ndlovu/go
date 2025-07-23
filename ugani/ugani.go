@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
+ // reversing both a string type and an Int type
 	fmt.Println(reverse.String("Ugani Friend"), reverse.Int(24601))
 }
