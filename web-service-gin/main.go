@@ -11,7 +11,7 @@ type album struct {
 	ID		string `json:"id"`
 	Title	string `json:"title`
 	Artist	string `json:"artist`
-	Price	float64 `json:"price"`
+	Price	float32 `json:"price"`
 }
 
 // album slice to seed record album data
