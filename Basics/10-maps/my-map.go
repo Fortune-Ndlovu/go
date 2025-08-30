@@ -12,6 +12,10 @@ func main () {
 			"RealName": "Bruce Wayne",
 			"City": "Gotham",
 		},
+		"Hunter" : map[string] string {
+			"RealName": "Fortune Ndlovu",
+			"City": "Trenches",
+		},
 	}
 	if temp, hero := superHero["Superman"]; hero {
 		fmt.Println(temp["RealName"], temp["City"])
