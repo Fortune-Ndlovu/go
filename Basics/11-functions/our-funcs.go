@@ -2,9 +2,7 @@ package main
 import "fmt"
 
 func main () {
-// 	x,y := 5,6
-// 	fmt.Println(add(x,y))
-// }
+	fmt.Println(add(5,7))
 
 // func add (num1, num int) int {
 // 	return num1 + num
@@ -12,6 +10,9 @@ func main () {
 	// recursion calling a fun inside itself
 	num := 5
 	fmt.Println(factorial(num))
+}
+func add(x, y) int {
+	return x + y
 }
 
 func factorial(num int) int {
