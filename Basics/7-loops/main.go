@@ -9,11 +9,6 @@ func main () {
 	// 	i++
 	// }
 
-	//for loop
-	// for i := 1; i < 10; i++{
-	// 	fmt.Println(i)
-	// }
-
 	// inner loop
 	for i:=1; i<10; i++{
 		for j:=1; j<i; j++ {
