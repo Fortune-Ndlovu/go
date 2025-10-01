@@ -9,9 +9,6 @@ func main () {
 	circ := Circle{7}
 	fmt.Println("Area of rectangle is ", getArea(rect))
 	fmt.Println("Radius of cicle is ", getArea(circ))
-// 	Area of rectangle is  3000
-// Radius of cicle is  153.93804002589985
-}
 
 type Shape interface {
 	area() float64
